@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap");
+nav {
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    background: rgb(252, 248, 236);
+    justify-content: space-between;
+    padding: 5px 2rem;
+    height: 4rem;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.3), 0 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.div-container {
+    display: flex;
+    column-gap: 2rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.link {
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 7px 15px;
+    border: 1px solid black;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 3px rgb(0, 0, 0, 0.3);
+}
+
+nav img {
+    height: 3.5rem;
+    width: 4.5rem;
+}
+
+.divs {
+    height: 100%;
+    width: 50px;
+    padding: 0.5rem;
+}
+
+.bars {
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+}
+
+@media (min-width: 800px) {
+    .divs {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .div-container {
+        display: none;
+    }
+}
+
+.warena {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.9);
+    background: rgb(252, 248, 236);
+    place-items: center;
+    transition: 0.3s;
+    transform: translateY(-150vh);
+    transform-origin: top;
+}
+
+.open {
+    transform: translate(0);
+    transition: 0.5s;
+}
+
+.bush {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    row-gap: 1rem;
+    flex-direction: column;
+    border: 2px solid white;
+    align-items: center;
+    box-shadow: 0 6px 3px rgba(0, 0, 0, 0.5), 0 -3px 3px rgba(0, 0, 0, 0.5);
+    transform: translate(-100vw);
+    transform-origin: left;
+    transition: 0.9s;
+}
+
+.nki {
+    text-decoration: none;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-family: "Sacramento", cursive;
+}
+
+.mose {
+    transform: translate(0);
+}
